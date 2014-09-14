@@ -1,0 +1,60 @@
+
+
+
+<div class="scrollable">
+ <div class="scrollable-content section">
+   
+   <form action="" id="" ng-submit="signUp()">
+
+     <div bs-panel title="">
+
+       <input
+        bs-form-control
+        
+        type="email" 
+        ng-model="user.username"
+        label="" 
+       label-class="col-xs-3 col-sm-2 col-lg-1" 
+        class="col-xs-10 col-sm-11 col-lg-12"
+        placeholder="Email Id"
+       />
+
+       <input
+        bs-form-control
+        
+        type="password" 
+        ng-model="user.password"
+        label="" 
+       label-class="col-xs-3 col-sm-2 col-lg-1" 
+        class="col-xs-10 col-sm-11 col-lg-12"
+        placeholder="Password"
+       />
+       
+       
+          
+        
+       <button type="submit" data-ui-ladda="login.loading" id="btnSignUp" ng-disabled="user.username==undefined||user.username=='' || user.password=='' || user.password==undefined" class="btn btn-success segoe-ui-light ladda-button" data-style="expand-right">
+<span class="ladda-label">Sign Up</span>
+       
+       
+     </div>
+
+     
+      
+   
+   </form>
+
+
+
+
+ <div overlay="myOverlay">
+  <h4 id="statusMsg" class="overlay-title">{{signUpMessage}}</h4>
+  <p toggle="off" bubble target="myOverlay">
+    <span ng-click="showSignIn()" class="btn btn-primary">Ok</span>
+  </p>  
+</div>
+
+
+
+ </div>
+</div>
